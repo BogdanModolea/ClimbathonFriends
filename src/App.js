@@ -178,7 +178,7 @@ function App() {
     
     today = mm + "/" + dd + "/" + yyyy;
     if (today > endDate) {
-      birthday = dayMonth + nextYear;
+      endDate = dayMonth + nextYear;
     }
     
     const countDown = new Date(endDate).getTime(),
