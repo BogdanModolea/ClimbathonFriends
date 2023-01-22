@@ -3,7 +3,6 @@ import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
-// import place1 from '.images/1st.svg';
 
 
 function App() {
@@ -168,24 +167,21 @@ function App() {
           minute = second * 60,
           hour = minute * 60,
           day = hour * 24;
-  
-    //I'm adding this section so I don't have to keep updating this pen every year :-)
-    //remove this if you don't need it
+
     let today = new Date(),
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
         dayMonth = "03/01/",
-        birthday = dayMonth + yyyy;
+        endDate = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
+    if (today > endDate) {
       birthday = dayMonth + nextYear;
     }
-    //end
     
-    const countDown = new Date(birthday).getTime(),
+    const countDown = new Date(endDate).getTime(),
         x = setInterval(function() {    
   
           const now = new Date().getTime(),
@@ -317,60 +313,6 @@ function App() {
           </li>
         </ul>
       </div>
-      
-
-
-
-
-
-      {/* <div className="container">
-        <h5>{us[0][0]}</h5>
-        <>
-          <p>{us[0][1]}</p>
-          <span className = "Wins">{us[0][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[0][3] + "L"}</span>
-          <p><span className = "Winrate">{Math.round((us[0][2] * 100) / (Math.max(1, us[0][3] + us[0][2]))) + "% WR - " + (us[0][3] + us[0][2]) + " Games"}</span></p>
-        </>
-      </div>
-      <div className="container">
-        <h5>{us[1][0]}</h5>
-        <>
-        <p>{us[1][1]}</p>
-          <span className = "Wins">{us[1][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[1][3] + "L"}</span>
-          <p><span className = "Winrate">{Math.round((us[1][2] * 100) / (Math.max(1, us[1][3] + us[1][2]))) + "% WR"}</span></p>
-        </>
-      </div>
-      <div className="container">
-      <h5>{us[2][0]}</h5>
-        <>
-        <p>{us[2][1]}</p>
-          <span className = "Wins">{us[2][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[2][3] + "L"}</span>
-          <p><span className = "Winrate">{Math.round((us[2][2] * 100) / (Math.max(1, us[2][3] + us[2][2]))) + "% WR"}</span></p>
-        </>
-      </div>
-      <div className="container">
-      <h5>{us[3][0]}</h5>
-        <>
-          <p>{us[3][1]}</p>
-          <span className = "Wins">{us[3][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[3][3] + "L"}</span>
-          <p><span className = "Winrate">{Math.round((us[3][2] * 100) / (Math.max(1, us[3][3] + us[3][2]))) + "% WR"}</span></p>
-        </>
-      </div>
-      <div className="container">
-      <h5>{us[4][0]}</h5>
-        <>
-          <p>{us[4][1]}</p>
-          <span className = "Wins">{us[4][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[4][3] + "L"}</span>
-          <p><span className = "Winrate">{Math.round((us[4][2] * 100) / (Math.max(1, us[4][3] + us[4][2]))) + "% WR"}</span></p>
-        </>
-      </div>
-      <div className="container">
-      <h5>{us[5][0]}</h5>
-        <>
-          <p>{us[5][1]}</p>
-          <span className = "Wins">{us[5][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[5][3] + "L"}</span>
-          <p><span className = "Winrate">{Math.round((us[5][2] * 100) / (Math.max(1, us[5][3] + us[5][2]))) + "% WR"}</span></p>
-        </>
-      </div> */}
     </div>
   );
 }
