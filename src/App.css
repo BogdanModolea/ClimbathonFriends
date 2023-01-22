@@ -1,5 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(10,19,33,1) 40%, rgba(15,31,45,1) 100%);
+  color: 272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.container{
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mylist{
+  display: inline-block;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.mylist span{
+  display: block;
+  font-size: 3.5rem;
+}
+
+
+.refresh {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.neonText{
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  opacity: 50%;
+  text-shadow: 
+    0 0 5px #fff, 
+    0 0 10px #fff,
+    0 0 15px #0073e6,
+    0 0 20px #0073e6,
+    0 0 25px #0073e6,
+    0 0 30px #0073e6,
+    0 0 35px #0073e6;
+}
+
+
+
+.neonTextCity{
+  color: #fff;
+  text-align: center;
+  opacity: 40%;
+  text-shadow: 
+    0 0 5px #fff, 
+    0 0 10px #fff,
+    0 0 15px #f09,
+    0 0 20px #f09,
+    0 0 25px #f09,
+    0 0 30px #f09,
+    0 0 35px #f09;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img{
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item{
+  display: flex;
+  padding: 1rem;
+}
+
+.cards_item_winner{
+  transform: translateY(-10%);
+  display: flex;
+  padding: 1rem;
+}
+
+.card_title_rank{
+  font-size: 20px;
+  color: #111827;
+}
+
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+  .cards_item_winner {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+  .cards_item_winner {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  border: 3px solid #5f0096;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  /* font-size: 0.875rem; */
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
 .App {
   text-align: center;
+}
+
+.Wins{
+  color: #16A34A;
+  font-weight: 700;
+}
+
+.Losses{
+  color: #DC2626;
+  font-weight: 700;
+}
+
+.Slash{
+  color: #374151;
+  font-weight: 700;
+}
+
+.Winrate{
+  color: #2563EB;
+  font-weight: 700;
 }
 
 .App-logo {
