@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ClimbathonFriends/static/css/main.a6abb21e.css",
-    "main.js": "/ClimbathonFriends/static/js/main.801a3d0f.js",
+    "main.css": "/ClimbathonFriends/static/css/main.b5bb09af.css",
+    "main.js": "/ClimbathonFriends/static/js/main.18be2f1a.js",
     "static/js/787.50845d5f.chunk.js": "/ClimbathonFriends/static/js/787.50845d5f.chunk.js",
     "static/media/1stplace.jpg": "/ClimbathonFriends/static/media/1stplace.6cda5c790000fbe77eb4.jpg",
     "static/media/restplace.jpg": "/ClimbathonFriends/static/media/restplace.cac499e88ecabc47f6de.jpg",
@@ -9,12 +9,12 @@
     "static/media/3rdplace.jpg": "/ClimbathonFriends/static/media/3rdplace.444ac851da310d1d7563.jpg",
     "static/media/logo.svg": "/ClimbathonFriends/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ClimbathonFriends/index.html",
-    "main.a6abb21e.css.map": "/ClimbathonFriends/static/css/main.a6abb21e.css.map",
-    "main.801a3d0f.js.map": "/ClimbathonFriends/static/js/main.801a3d0f.js.map",
+    "main.b5bb09af.css.map": "/ClimbathonFriends/static/css/main.b5bb09af.css.map",
+    "main.18be2f1a.js.map": "/ClimbathonFriends/static/js/main.18be2f1a.js.map",
     "787.50845d5f.chunk.js.map": "/ClimbathonFriends/static/js/787.50845d5f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6abb21e.css",
-    "static/js/main.801a3d0f.js"
+    "static/css/main.b5bb09af.css",
+    "static/js/main.18be2f1a.js"
   ]
 }
