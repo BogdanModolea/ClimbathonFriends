@@ -206,7 +206,7 @@ function App() {
 
         <div className="container">
           <div id="countdown">
-            <ul>
+            <ul className="container_countdown">
               <li className="mylist"><span id = "days"></span>days</li>
               <li className ="mylist"><span id = "hours"></span>Hours</li>
               <li className ="mylist"><span id = "minutes"></span>Minutes</li>

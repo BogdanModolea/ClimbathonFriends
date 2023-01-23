@@ -22,6 +22,7 @@ body{
   color: #ffffff;
   margin: 0 auto;
   text-align: center;
+  align-items: center;
 }
 
 .mylist{
@@ -37,6 +38,9 @@ body{
   font-size: 3.5rem;
 }
 
+.container_countdown{
+  transform: translateX(-16px);
+}
 
 .refresh {
   background: #5E5DF0;
@@ -66,7 +70,7 @@ body{
   color: #fff;
   font-size: 60px;
   text-align: center;
-  opacity: 50%;
+  opacity: 90%;
   text-shadow: 
     0 0 5px #fff, 
     0 0 10px #fff,
@@ -82,7 +86,7 @@ body{
 .neonTextCity{
   color: #fff;
   text-align: center;
-  opacity: 40%;
+  /* opacity: 40%; */
   text-shadow: 
     0 0 5px #fff, 
     0 0 10px #fff,
