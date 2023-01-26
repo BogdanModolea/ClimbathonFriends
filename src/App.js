@@ -171,7 +171,29 @@ function App() {
   }
 
   var us = sorting();
+  let firstplace;
+  let secondplace;
+  let photo1;
+  let photo2;
+  let place1;
+  let place2;
 
+
+
+  window.addEventListener("resize", function(){
+    if (window.innerWidth < 56 * 16) {
+      var firstItem = document.getElementById("li1");
+      var secondItem = document.getElementById("li2");
+      firstItem.parentNode.insertBefore(secondItem,firstItem);
+    } else {
+      var firstItem = document.getElementById("li1");
+      var secondItem = document.getElementById("li2");
+      secondItem.parentNode.insertBefore(firstItem,secondItem);
+    }
+  });
+  
+
+  
 
 
   (function () {
@@ -231,9 +253,9 @@ function App() {
         <button className="refresh" onClick={e=>RefreshPage(e)}>Refresh Data</button>
 
         <ul className="cards">
-          <li className="cards_item">
+          <li id = "li1" className="cards_item_second">
             <div className="card">
-              <div className="card_image"><img src={require('./images/2ndplace.jpg')}></img></div>
+              <div className="card_image"><img id = "img2" src={require('./images/2ndplace.jpg')}></img></div>
               <div className="card_content">
                 <h2 className="card_title">2nd Place</h2>
                 <h2 className="card_title">{us[1][0]}</h2>
@@ -247,9 +269,9 @@ function App() {
             </div>
           </li>
 
-          <li className="cards_item_winner">
+          <li id = "li2" className="cards_item_winner">
             <div className="card">
-              <div className="card_image"><img src={require('./images/1stplace.jpg')}></img></div>
+              <div className="card_image"><img id = "img1" src={require('./images/1stplace.jpg')}></img></div>
               <div className="card_content">
               <h2 className="card_title">1st Place</h2>
                 <h2 className="card_title">{us[0][0]}</h2>
