@@ -140,7 +140,19 @@ function App() {
   }
 
   function compare(a, b){
-    return rankToValue[a[1]] - rankToValue[b[1]];
+
+    // WR = Math.round((a[2] * 100) / Math.max(1, a[2] + a[3]))
+
+    let aWR = Math.round((a[2] * 100) / Math.max(1, a[2] + a[3]));
+    let bWR = Math.round((b[2] * 100) / Math.max(1, b[2] + b[3]));
+
+    if (rankToValue[a[1]] !== rankToValue[b[1]]) {
+      return rankToValue[a[1]] - rankToValue[b[1]];
+    } else if (aWR !== bWR) {
+      return bWR - aWR;
+    } else {
+      return a[0].localeCompare(b[0]);
+    }
   }
 
   function sorting(){
@@ -274,9 +286,9 @@ function App() {
                 <h2 className="card_title">{us[3][0]}</h2>
                 <h2 className="card_title_rank">{us[3][1] + " " + us[3][4] + " LP"}</h2>
                 <p className="card_text">
-                  <span className = "Wins">{us[2][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[2][3] + "L"}</span>
+                  <span className = "Wins">{us[3][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[3][3] + "L"}</span>
                   <br></br>
-                  <span className = "Winrate">{Math.round((us[2][2] * 100) / (Math.max(1, us[2][3] + us[2][2]))) + "% WR - " + (us[2][3] + us[2][2]) + " Games"}</span>
+                  <span className = "Winrate">{Math.round((us[3][2] * 100) / (Math.max(1, us[3][3] + us[3][2]))) + "% WR - " + (us[3][3] + us[3][2]) + " Games"}</span>
                 </p>
               </div>
             </div>
@@ -289,9 +301,9 @@ function App() {
                 <h2 className="card_title">{us[4][0]}</h2>
                 <h2 className="card_title_rank">{us[4][1] + " " + us[4][4] + " LP"}</h2>
                 <p className="card_text">
-                  <span className = "Wins">{us[2][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[2][3] + "L"}</span>
+                  <span className = "Wins">{us[4][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[4][3] + "L"}</span>
                   <br></br>
-                  <span className = "Winrate">{Math.round((us[2][2] * 100) / (Math.max(1, us[2][3] + us[2][2]))) + "% WR - " + (us[2][3] + us[2][2]) + " Games"}</span>
+                  <span className = "Winrate">{Math.round((us[4][2] * 100) / (Math.max(1, us[4][3] + us[4][2]))) + "% WR - " + (us[4][3] + us[4][2]) + " Games"}</span>
                 </p>
               </div>
             </div>
@@ -304,9 +316,9 @@ function App() {
                 <h2 className="card_title">{us[5][0]}</h2>
                 <h2 className="card_title_rank">{us[5][1] + " " + us[5][4] + " LP"}</h2>
                 <p className="card_text">
-                  <span className = "Wins">{us[2][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[2][3] + "L"}</span>
+                  <span className = "Wins">{us[5][2] + "W"}</span> <span className = "Slash"> / </span> <span className = "Losses">{us[5][3] + "L"}</span>
                   <br></br>
-                  <span className = "Winrate">{Math.round((us[2][2] * 100) / (Math.max(1, us[2][3] + us[2][2]))) + "% WR - " + (us[2][3] + us[2][2]) + " Games"}</span>
+                  <span className = "Winrate">{Math.round((us[5][2] * 100) / (Math.max(1, us[5][3] + us[5][2]))) + "% WR - " + (us[5][3] + us[5][2]) + " Games"}</span>
                 </p>
               </div>
             </div>
