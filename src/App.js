@@ -16,7 +16,7 @@ function App() {
 
   const [testData, setTestData] = useState({});
 
-  const riotKey = 'RGAPI-50d5b23f-8bfd-4c28-8829-817e3bfc668b';
+  const riotKey = 'RGAPI-69494e30-e34c-4727-bebb-8d364aec1171';
   
   let fabian = 'N954To8SyMXoTd2JhRlMg200GyNNHOG0JbZ04Ef3URfLg2Y';
   let leo = 'NI6JBJ7tYn407b1fnaOFv7AFTDhMqtkE6V30lWBopj1Annk';
