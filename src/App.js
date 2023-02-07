@@ -16,7 +16,7 @@ function App() {
 
   const [testData, setTestData] = useState({});
 
-  const riotKey = 'RGAPI-f0441dca-5479-4e32-b1cd-7cd7f18b2c73';
+  const riotKey = 'RGAPI-1e5c36f1-df8f-4db8-90a9-6c8d73dd0e06';
   
   let fabian = 'N954To8SyMXoTd2JhRlMg200GyNNHOG0JbZ04Ef3URfLg2Y';
   let leo = 'NI6JBJ7tYn407b1fnaOFv7AFTDhMqtkE6V30lWBopj1Annk';
@@ -25,7 +25,7 @@ function App() {
   let stefan = 'jg3iSRnW2YJO5go_Ou-EwPrFrtllHkwcVbF_yEq0CUszh4o';
   let bogdan2 = '_0ngHMLC7hPbq-47VDVqB3Jc7RrFPz2HS87r_wl6Fa2UnjjfgZIWf7doBg';
 
-  let test = 'RGAPI-6539c9b2-8122-4e98-b6e1-4feb23b2c7d0';
+  let test = '1FcO8WEt1dbe_dwtj6gx1dgTI1WivZXjux1lV4uH1x4IdIU';
     
   let link = 'https://eun1.api.riotgames.com/lol/league/v4/entries/by-summoner/';
 
@@ -105,6 +105,17 @@ function App() {
     searchForPlayer(stefan);
     searchForPlayer(bogdan2);
     searchForPlayer(test);
+
+
+    if (window.innerWidth < 56 * 16) {
+      var firstItem = document.getElementById("li1");
+      var secondItem = document.getElementById("li2");
+      firstItem.parentNode.insertBefore(secondItem,firstItem);
+    } else {
+      var firstItem = document.getElementById("li1");
+      var secondItem = document.getElementById("li2");
+      secondItem.parentNode.insertBefore(firstItem,secondItem);
+    }
     
   }
 
