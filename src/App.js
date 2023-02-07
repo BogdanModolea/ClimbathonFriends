@@ -25,7 +25,7 @@ function App() {
   let stefan = 'jg3iSRnW2YJO5go_Ou-EwPrFrtllHkwcVbF_yEq0CUszh4o';
   let bogdan2 = '_0ngHMLC7hPbq-47VDVqB3Jc7RrFPz2HS87r_wl6Fa2UnjjfgZIWf7doBg';
 
-  let test = '1FcO8WEt1dbe_dwtj6gx1dgTI1WivZXjux1lV4uH1x4IdIU';
+  let test = 'RGAPI-6539c9b2-8122-4e98-b6e1-4feb23b2c7d0';
     
   let link = 'https://eun1.api.riotgames.com/lol/league/v4/entries/by-summoner/';
 
@@ -94,7 +94,7 @@ function App() {
   }
   
   function RefreshPage(event){
-    window.location.reload();    
+    window.location.reload();   
   }
   
   window.onload = function() {
