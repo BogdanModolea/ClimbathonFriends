@@ -16,7 +16,7 @@ function App() {
 
   const [testData, setTestData] = useState({});
 
-  const riotKey = 'RGAPI-2ce45e5b-2ef5-4b98-89a0-eef36b0a5c87';
+  const riotKey = 'RGAPI-58040c67-a4fe-4ca9-9b8b-47b4fcedb85e';
   
   let fabian = 'N954To8SyMXoTd2JhRlMg200GyNNHOG0JbZ04Ef3URfLg2Y';
   let leo = 'NI6JBJ7tYn407b1fnaOFv7AFTDhMqtkE6V30lWBopj1Annk';
@@ -237,7 +237,11 @@ function App() {
             document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
             document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-            if (distance < 0) {
+            if (distance <= 0) {
+              document.getElementById("days").innerText = 0;
+              document.getElementById("hours").innerText = 0;
+              document.getElementById("minutes").innerText = 0;
+              document.getElementById("seconds").innerText = 0;
               clearInterval(x);
           }
         }, 0)
